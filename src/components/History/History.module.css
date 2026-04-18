@@ -1,0 +1,156 @@
+.historyLines {
+    padding: 14.6vh 10.5vw;
+    background-color: white;
+    border: 2px solid var(--GrayColor);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border-radius: 12px;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.bigLine {
+    position: absolute;
+    height: 85%;
+    width: 14px;
+    background-color: black;
+    border: 6px solid var(--shadowColor);
+    align-self: flex-start;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.historyLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yearSide {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.yearCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid var(--GrayColor);
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    border-radius: 12px;
+    padding: 30px 50px;
+    margin-right: 50px;
+}
+
+.year {
+    font-weight: 700;
+    font-size: 68px;
+}
+
+.groupLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+    width: 100%;
+}
+
+.circle {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--GrayColor);
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.circleR {
+    transform: translateX(50%);
+}
+
+.circleL {
+    transform: translateX(-50%);
+}
+
+.line {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 3.5vw;
+    height: 14px;
+    background-color: black;
+    border: 6px solid var(--shadowColor);
+    border-left: none;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media screen and (max-width : 992px) {
+    .historyLines {
+        padding: 50px 10px;
+    }
+
+    .historyLine {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .img {
+        width: 50px;
+    }
+
+    .yearCard{
+        padding: 20px 24px;
+    }
+
+    .year {
+        font-size: 38px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .content {
+        width:70%;
+        margin-left: 52px;
+        margin-right: 20px;
+    }
+    .line {
+    max-width: 50%;
+    min-width: 14vw;
+    }
+
+    .bigLine {
+    height: 82%;
+    transform: translateY(-58%);
+}
+}

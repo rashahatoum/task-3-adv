@@ -1,0 +1,18 @@
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2vw;
+}
+
+.sliderWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.cardsSlider {
+    display: flex;
+    gap: 3vw;
+    transition: transform 1s ease;
+}

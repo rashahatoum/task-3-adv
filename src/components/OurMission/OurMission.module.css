@@ -1,0 +1,39 @@
+.MissionCards{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.MissionCard{
+    border: 2px solid var(--GrayColor);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+    background-color: white;
+    padding: 50px;
+    min-height: 330px;
+}
+.cardHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.HeadTitle{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+@media screen and (max-width : 992px) {
+.MissionCards{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, minmax(250px, 620px));
+}
+.HeadIcon{
+    width:50px;
+}
+.HeadTitle{
+    font-size: 30px;
+}
+}
