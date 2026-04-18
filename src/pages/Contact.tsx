@@ -31,7 +31,7 @@ const Contact = () => {
         <section className="section">
             <div className="container">
                 <HeroSections
-                    img="/assets/imgs/hero-squares.png"
+                    img="/task-3-adv/assets/imgs/hero-squares.png"
                     btn="Contact Us"
                     title="Feel Free To Connect With Us"
                     desc="We value open communication and are eager to assist you with any inquiries. Feel free to reach out to us through any of the following contact methods"

@@ -39,12 +39,12 @@ const Root = () => {
         <div>
             <NavBar
                 bannerText="Admission is Open, Grab your seat now"
-                logo="assets/imgs/Logo.png"
+                logo="/task-3-adv/assets/imgs/Logo.png"
                 items={navItem}
             />
             <Outlet />
             <Footer
-                logo="assets/imgs/Logo.png"
+                logo="/task-3-adv/assets/imgs/Logo.png"
                 footerDesc="We believe in the power of play to foster creativity, problem-solving skills, and imagination."
                 email="hello@littlelearners.com"
                 phone="+91 91813 23 2309"
