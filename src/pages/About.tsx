@@ -34,7 +34,7 @@ const About = () => {
               },
               {
                 title: "Vision",
-                icon: "/assets/imgs/scope.png",
+                icon: "/task-3-adv/assets/imgs/scope.png",
                 desc: "Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity."
               },
             ]}

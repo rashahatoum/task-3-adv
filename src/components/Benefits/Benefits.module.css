@@ -38,7 +38,7 @@ width:24px;
     padding-bottom: 16px;
 }
 
-@media screen and (max-width : 992px) {/*  */
+@media screen and (max-width : 992px) {
     .BenefitsCards{
         grid-template-columns: repeat(auto-fit, minmax(250px, 504px));
     }

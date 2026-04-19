@@ -10,41 +10,45 @@ import Admissions from './pages/Admissions.tsx'
 import StudentLife from './pages/StudentLife.tsx'
 import Contact from './pages/Contact.tsx'
 
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
-    path:"/",
+    path: "/",
     element: <Root />,
-    children:[
-    {
-    path:"/",
-    element: <Home />
-    },
-    {
-    path:"about",
-    element: <About />
-    },
-    {
-    path:"academics",
-    element: <Academics />
-    },
-    {
-    path:"admissions",
-    element: <Admissions />
-    },
-    {
-    path:"studentlife",
-    element: <StudentLife />
-    },
-    {
-    path:"contact",
-    element: <Contact />
-    }
-  ]
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "about",
+        element: <About />
+      },
+      {
+        path: "academics",
+        element: <Academics />
+      },
+      {
+        path: "admissions",
+        element: <Admissions />
+      },
+      {
+        path: "studentlife",
+        element: <StudentLife />
+      },
+      {
+        path: "contact",
+        element: <Contact />
+      }
+    ]
   }
-])
+],
+  {
+    basename: "/task-3-adv/"
+  }
+)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )

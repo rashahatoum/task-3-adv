@@ -43,3 +43,9 @@ h3,h4{
 .section {
   padding-bottom: 14.7vh;
 }
+
+@media screen and (max-width : 992px) {
+    .section{
+        padding-bottom: 80px;
+    }
+}

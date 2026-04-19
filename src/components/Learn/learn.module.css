@@ -1,0 +1,43 @@
+.LearnCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.LearnCard {
+    border: 2px solid var(--GrayColor);
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 2px var(--GrayColor);
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.rectangular {
+    width: 103px;
+    height: 70%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: var(--questionsBG);
+    border: 2px solid var(--GrayColor);
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width : 992px) {
+    .LearnCards{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 504px));
+    }
+}

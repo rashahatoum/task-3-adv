@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rashahatoum.github.io/Task-2-Adv/",
+  "homepage": "https://rashahatoum.github.io/task-3-adv/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
