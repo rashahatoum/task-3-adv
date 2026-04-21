@@ -4,7 +4,7 @@
 }
 
 .card {
-    flex: 0 0 clamp(315px, 30%, 625px);
+    flex: 0 0 clamp(315px, 30%, 690px);
 }
 
 .sliderFooter {

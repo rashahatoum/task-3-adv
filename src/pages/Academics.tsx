@@ -131,7 +131,9 @@ const Academics = () => {
                                 images: ["/task-3-adv/assets/imgs/Library1.png",
                                     "/task-3-adv/assets/imgs/Library2.png",
                                     "/task-3-adv/assets/imgs/Library3.png",
-                                    "/task-3-adv/assets/imgs/Library4.png",],
+                                    "/task-3-adv/assets/imgs/Library4.png",
+                                    "/task-3-adv/assets/imgs/Classrooms1.png",
+                                    "/task-3-adv/assets/imgs/Classrooms2.png",],
                                 title: "Library",
                                 desc: "Our expansive library is a treasure trove of books, fostering a love for reading and supporting students' literacy development."
                             },
@@ -140,7 +142,9 @@ const Academics = () => {
                                 images: ["/task-3-adv/assets/imgs/Science1.png",
                                     "/task-3-adv/assets/imgs/Science2.png",
                                     "/task-3-adv/assets/imgs/Science3.png",
-                                    "/task-3-adv/assets/imgs/Science4.png",],
+                                    "/task-3-adv/assets/imgs/Science4.png",
+                                    "/task-3-adv/assets/imgs/Computer3.png",
+                                    "/task-3-adv/assets/imgs/Computer4.png",],
                                 title: "Science Lab",
                                 desc: "Our hands-on science lab allows students to conduct experiments and explore scientific concepts in a fun and interactive way."
                             },
@@ -149,7 +153,9 @@ const Academics = () => {
                                 images: ["/task-3-adv/assets/imgs/Computer1.png",
                                     "/task-3-adv/assets/imgs/Computer2.png",
                                     "/task-3-adv/assets/imgs/Computer3.png",
-                                    "/task-3-adv/assets/imgs/Computer4.png",],
+                                    "/task-3-adv/assets/imgs/Computer4.png",
+                                    "/task-3-adv/assets/imgs/Science2.png",
+                                    "/task-3-adv/assets/imgs/Science3.png",],
                                 title: "Computer Lab",
                                 desc: "Equipped with age-appropriate technology, the computer lab enhances students' digital literacy and computational skills."
                             },
@@ -158,7 +164,9 @@ const Academics = () => {
                                 images: ["/task-3-adv/assets/imgs/Garden1.png",
                                     "/task-3-adv/assets/imgs/Garden2.png",
                                     "/task-3-adv/assets/imgs/Garden3.png",
-                                    "/task-3-adv/assets/imgs/Garden4.png",],
+                                    "/task-3-adv/assets/imgs/Garden4.png",
+                                    "/task-3-adv/assets/imgs/Classrooms1.png",
+                                    "/task-3-adv/assets/imgs/Classrooms2.png",],
                                 title: "Garden and Nature Area",
                                 desc: "Our garden and nature area offer an opportunity for children to connect with nature and learn about plants and the environment."
                             },

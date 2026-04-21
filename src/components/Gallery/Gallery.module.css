@@ -6,7 +6,7 @@
     gap: 30px;
     width: 100%;
     padding: 40px;
-    padding-top: 25vh;
+    padding-top: 250px;
     margin-bottom: 20vh;
     border: 2px solid var(--GrayColor);
     box-shadow: 4px 4px 0px 1px #1E1E1E;
@@ -77,7 +77,7 @@
     }
     .galleryItem {
         padding: 30px;
-        padding-top: 16vh;
+        padding-top: clamp(60px, 40vw, 200px);
         max-width: 425px;
         width: 100%;
     }
@@ -85,7 +85,6 @@
     flex: 0 0 100%;
     width: 100%;
     max-width:100%;
-    max-height: 203px;
 }
 .sliderFooter {
     flex-direction: column;

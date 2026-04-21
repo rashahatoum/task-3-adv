@@ -1,6 +1,8 @@
 .LearnCards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 504px));
+    align-items: center;
+    justify-content: center;
     gap: 40px;
 }
 
