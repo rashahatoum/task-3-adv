@@ -21,6 +21,7 @@
     z-index: 1;
 }
 
+
 .rectangular {
     width: 103px;
     height: 70%;
@@ -39,5 +40,17 @@
 @media screen and (max-width : 992px) {
     .LearnCards{
         grid-template-columns: repeat(auto-fit, minmax(250px, 504px));
+        align-items: center;
+        justify-content: center;
     }
+    .learnImg{
+        width: 100%;
+        max-width: 360px; 
+    }
+    .LearnCard {
+        padding: 30px;
+    }
+    .rectangular {
+    height: clamp(215px, 65%, 385px);
+}
 }

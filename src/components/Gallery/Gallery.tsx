@@ -15,7 +15,7 @@ const Gallery = ({ Galleries }: GalleryProps) => {
     }>({});
 
     return (
-        <>
+        <div className={styles.galleryContainer} >
             {Galleries.map((item) => (
                 <div className={styles.galleryItem} key={item.id}>
                     <div className={styles.images}>
@@ -35,7 +35,7 @@ const Gallery = ({ Galleries }: GalleryProps) => {
                     <p className={styles.sliderDesc}>{item.desc}</p>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 

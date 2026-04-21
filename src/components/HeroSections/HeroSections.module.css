@@ -1,5 +1,5 @@
 .heroSections {
-    margin-top: 21vh;
+    margin-top: 185px;
     padding: 8.3vw 14vh;
     background-color: white;
     border: 2px solid var(--GrayColor);
@@ -84,7 +84,7 @@
 
 @media screen and (max-width : 1024px) {
 .heroSections {
-    margin-top: 23vh;
+    margin-top: 200px;
     padding: 50px 30px;
 }
 .heroContent {

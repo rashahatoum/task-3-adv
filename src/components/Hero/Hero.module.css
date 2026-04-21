@@ -1,5 +1,5 @@
 .hero {
-    margin-top: 18vh;
+    margin-top: 185px;
     padding: 0px 5.5vw 150px;
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@
 @media screen and (max-width : 992px) {
     .hero {
         padding: 0px 20px 80px;
-        margin-top: 23vh;
+        margin-top: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -85,7 +85,7 @@
 
 @media screen and (max-width : 992px) {
     .navGroup {
-        padding: 40px 16px 0px;
+        padding: 3vh 16px 0px;
     }
 
     .banner {
@@ -115,7 +115,7 @@
         transform: translateX(150%);
         transition: all 1s;
         background-color: var(--BackgroundColor);
-        z-index: 2;
+        z-index: 5;
     }
 
     .showMenu {

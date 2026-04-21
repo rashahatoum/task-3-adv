@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 
 export const useSlider = (itemsLength: number) => {
@@ -45,6 +44,14 @@ export const useSlider = (itemsLength: number) => {
         if (currentIndex > maxIndex) setCurrentIndex(maxIndex);
     }, [maxIndex]);
 
+    const getTranslateX = () => {
+        if (!sliderRef.current) return currentIndex * move;
+        const totalwidth = sliderRef.current.scrollWidth;
+        const wrapperWidth = sliderRef.current.parentElement?.offsetWidth ?? 0;
+        const maxTranslate = totalwidth - wrapperWidth;
+        return Math.min(currentIndex * move, Math.max(0, maxTranslate));
+    }
+
     const next = () =>
         setCurrentIndex((prev) => (prev === maxIndex ? 0 : prev + 1));
 
@@ -58,5 +65,6 @@ export const useSlider = (itemsLength: number) => {
         next,
         prev,
         maxIndex,
+        getTranslateX,
     };
 };

@@ -1,4 +1,4 @@
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import styles from "./Slider.module.css";
 import { useSlider } from "../../hooks/useSlider";
 
@@ -15,17 +15,29 @@ interface SliderProps {
 const Slider = ({ children, itemsLength, onInit, className }: SliderProps) => {
     const {
         sliderRef,
-        currentIndex,
-        move,
+        getTranslateX,
         next,
         prev,
     } = useSlider(itemsLength);
 
-        useEffect(() => {
-        if (onInit) {
-            onInit({ next, prev});
+
+    const controlsRef = useRef({ next, prev });
+
+    useEffect(() => {
+        controlsRef.current = { next, prev };
+    }, [next, prev]);
+
+    const hasInitialized = useRef(false);
+
+    useEffect(() => {
+        if (onInit && !hasInitialized.current) {
+            onInit({
+                next: () => controlsRef.current.next(),
+                prev: () => controlsRef.current.prev(),
+            });
+            hasInitialized.current = true; 
         }
-    }, []);
+    }, [onInit]); 
 
     return (
         <div className={styles.sliderContainer}>
@@ -35,7 +47,7 @@ const Slider = ({ children, itemsLength, onInit, className }: SliderProps) => {
                     className={`${styles.cardsSlider} ${className || ""}`}
                     ref={sliderRef}
                     style={{
-                        transform: `translateX(-${currentIndex * move}px)`
+                        transform: `translateX(-${getTranslateX()}px)`
                     }}
                 >
                 {children}
