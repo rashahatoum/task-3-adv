@@ -80,8 +80,46 @@
         font-size: 20px;
         line-height: 150%;
     }
-    .cardTitle {
-    width:100%;
 }
 
+@media screen and (max-width: 400px) {
+    .MemberCards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .MemberCard {
+        padding: 16px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .qualifier {
+        padding: 12px;
+        min-height: unset;
+    }
+    .CardHead {
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .nameImg {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    .emailIcon {
+        padding: 8px;
+        font-size: 20px;
+    }
+    .memberImg {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+    .cardTitle {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .cardDesc {
+        font-size: 13px;
+        word-break: break-word;
+    }
 }

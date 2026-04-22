@@ -15,7 +15,7 @@ const [controls, setControls] = useState<{
     prev: () => void;
 } | null>(null);
     return (
-        <>
+        <div className={styles.testimonialsSection}>
             <div className={styles.sliderContainer}>
                 <button className={`${styles.sliderBtn} ${styles.lapLeftBtn}`} onClick={controls?.prev}><FaArrowLeft /></button>
                 <Slider
@@ -46,7 +46,7 @@ const [controls, setControls] = useState<{
                         <FaArrowRight /></button>
                 </div>
             </div>
-        </>
+            </div>
     )
 }
 

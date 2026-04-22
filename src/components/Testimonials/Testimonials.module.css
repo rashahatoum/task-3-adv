@@ -1,3 +1,8 @@
+.testimonialsSection {
+        padding: 0 5.5vw;
+        width: 100%;
+    }
+
 .sliderContainer {
     display: flex;
     align-items: center;
@@ -54,6 +59,12 @@
     display: none;
 }
 
+    @media screen and (max-width: 600px) {
+      .testimonialsSection {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
 @media screen and (max-width : 1024px) {
     .sliderContainer {
         flex-direction: column;
