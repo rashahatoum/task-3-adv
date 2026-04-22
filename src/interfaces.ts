@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export interface navItem {
+export interface NavItem {
     path: string;
     pageName: string
 }
@@ -9,7 +9,7 @@ export interface navItem {
 export interface NavBarProps {
     bannerText: string;
     logo: string;
-    items: Array<navItem>;
+    items: Array<NavItem>;
 }
 
 export interface TestimonialsCard {
