@@ -1,12 +1,7 @@
 import { useState } from "react";
+import type { FiltersProps } from "../../interfaces";
 import style from "./Filters.module.css";
 
-interface FiltersProps<T> {
-    items: T[];
-    filters: string[];
-    filterKey?: keyof T;
-    onChange: (filtered: T[]) => void;
-}
 
 function Filters<T>({
     items,

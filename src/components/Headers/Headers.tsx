@@ -1,10 +1,6 @@
 import styles from "./Headers.module.css"
+import type { HeaderSectionsProps } from "../../interfaces";
 
-interface HeaderSectionsProps {
-    sectionBtn: string;
-    sectionTitle: string;
-    sectionParagraph: string;
-}
 const Headers = ({ sectionBtn, sectionTitle, sectionParagraph }: HeaderSectionsProps) => {
     return (
         <div className={styles.HeaderSections}>

@@ -80,4 +80,8 @@
         font-size: 20px;
         line-height: 150%;
     }
+    .cardTitle {
+    width:100%;
+}
+
 }

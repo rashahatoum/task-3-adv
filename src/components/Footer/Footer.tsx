@@ -2,26 +2,11 @@ import styles from "./Footer.module.css"
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import type { footerProps } from "../../interfaces";
 
 
 
 
-interface FooterSection {
-    title: string;
-    items: string[];
-}
-
-interface footerProps {
-    logo: string;
-    footerDesc: string;
-    email: string;
-    phone: string;
-    location: string;
-    sections: FooterSection[];
-    privacy: Array<string>;
-    social: Array<React.ReactNode>;
-    copyRight: string;
-}
 
 
 const Footer = ({ logo, footerDesc, email, phone, location, sections, privacy, social, copyRight }: footerProps) => {

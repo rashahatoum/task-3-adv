@@ -1,18 +1,5 @@
 import styles from "./Hero.module.css"
-
-interface HeroCards {
-    title: string;
-    desc: string;
-}
-
-interface HeroProps {
-    heroImg: string;
-    subTitle: string;
-    title: string;
-    titleSpan: string;
-    heroP: string;
-    HeroCards: HeroCards[]
-}
+import type { HeroProps } from "../../interfaces"
 
 const Hero = ({ heroImg, subTitle, title, titleSpan, heroP, HeroCards }: HeroProps) => {
     return (

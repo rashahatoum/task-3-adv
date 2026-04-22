@@ -1,17 +1,7 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import styles from "./Slider.module.css";
 import { useSlider } from "../../hooks/useSlider";
-
-interface SliderProps {
-    children: ReactNode;
-    itemsLength: number;
-    className?: string;
-    onInit?: (controls: {
-        next: () => void;
-        prev: () => void;
-    }) => void;
-}
-
+import type { SliderProps } from "../../interfaces";
 const Slider = ({ children, itemsLength, onInit, className }: SliderProps) => {
     const {
         sliderRef,
@@ -19,7 +9,6 @@ const Slider = ({ children, itemsLength, onInit, className }: SliderProps) => {
         next,
         prev,
     } = useSlider(itemsLength);
-
 
     const controlsRef = useRef({ next, prev });
 

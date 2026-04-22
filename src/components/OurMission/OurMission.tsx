@@ -1,8 +1,8 @@
 import styles from "./OurMission.module.css"
-import type { ourMissionCard } from "../../interfaces"
+import type { OurMissionProps } from "../../interfaces"
 
 
-const OurMission = ({ ourMissionCards }: { ourMissionCards: ourMissionCard[] }) => {
+const OurMission = ({ ourMissionCards }: OurMissionProps) => {
     return (
         <div className={styles.MissionCards}>
         {ourMissionCards.map((card , index)=>{

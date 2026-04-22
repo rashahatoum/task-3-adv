@@ -2,17 +2,7 @@ import { useState } from "react";
 import styles from "./Questions.module.css"
 import { FiPlus } from "react-icons/fi";
 import { BiMinus } from "react-icons/bi";
-
-
-
-
-interface question {
-    question: string;
-    answer?: string;
-}
-interface questionsProps {
-    questions: question[]
-}
+import type { questionsProps } from "../../interfaces";
 
 
 const Questions = ({ questions }: questionsProps) => {

@@ -1,14 +1,7 @@
 import styles from "./Navigate.module.css"
 import { FaArrowRight } from "react-icons/fa6";
+import type { NavigateProps } from "../../interfaces";
 
-interface pageCard {
-    pageTitle: string;
-    pageDesc: string;
-    pageBtn: string;
-}
-interface NavigateProps {
-    pageCards: pageCard[];
-}
 
 const Navigate = ({ pageCards }: NavigateProps) => {
     return (
