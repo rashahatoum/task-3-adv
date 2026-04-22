@@ -1,14 +1,32 @@
 import styles from "./NavBar.module.css"
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaArrowRight } from "react-icons/fa";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import type { NavBarProps } from "../../interfaces";
 
 
 
 const NavBar = ({ bannerText, logo, items }: NavBarProps) => {
-    const [showMenu,setShowMenu]=useState<boolean>(false)
+    const [showMenu, setShowMenu] = useState(false)
+    const { pathname } = useLocation()
+
+    const getNavLinkClassName = ({ isActive }: { isActive: boolean }) =>
+        `${isActive ? styles.active : ""} ${styles.itemLink}`.trim()
+
+    const renderNavItems = (itemClassName?: string) =>
+        items.map((item , index) => (
+            <li key={index} className={itemClassName}>
+                <NavLink className={getNavLinkClassName} to={item.path}>
+                    {item.pageName}
+                </NavLink>
+            </li>
+        ))
+
+    useEffect(() => {
+        setShowMenu(false)
+    }, [pathname])
+
     return (
         <>
         <div className={styles.navGroup}>
@@ -20,32 +38,14 @@ const NavBar = ({ bannerText, logo, items }: NavBarProps) => {
                 <div className={styles.logo}>
                     <img src={logo} className={styles.logoImg} alt="logo" />
                 </div>
-                <ul className={styles.navList}>
-                    {items.map((item, index) => {
-                        return (
-                            <li key={index}>
-                            <NavLink 
-                            className={({isActive}) => `${isActive ? styles.active : ""} ${styles.itemLink}`} 
-                            to={item.path}>{item.pageName}
-                            </NavLink>
-                            </li>
-                        )
-                    })}
-                </ul>
-                <button className={styles.bars} onClick={()=>setShowMenu(!showMenu)}><HiBars3BottomRight /></button>
+                <ul className={styles.navList}>{renderNavItems()}</ul>
+                <button className={styles.bars} onClick={() => setShowMenu((current) => !current)}>
+                    <HiBars3BottomRight />
+                </button>
             </nav>
         </div>
-                    <ul className={`${styles.navMenu} ${showMenu ? styles.showMenu : ""}`}>
-                {items?.map((item, index) => {
-                    return (
-                        <li key={index} className={styles.item}>
-                            <NavLink 
-                            className={({isActive}) => `${isActive ? styles.active : ""} ${styles.itemLink}`} 
-                            to={item.path}>{item.pageName}
-                            </NavLink>
-                        </li>
-                    )
-                })}
+        <ul className={`${styles.navMenu} ${showMenu ? styles.showMenu : ""}`}>
+                {renderNavItems(styles.item)}
             </ul>
         </>
     )
